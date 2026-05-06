@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Seth Moore -->
+<head>
+	<title>Pokemon Interactive Map</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	
+	<!-- The line below will scale for a mobile phone -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="First build of the Pokemon website, this website includes everything I have learned about web development this semester">
+	
+                
+	
+	<style>
+	
+	
+	body, header, nav, main, footer, img{
+		margin: 0;
+		padding: 0;
+		border: 0;
+	
+	}
+	
+	body{
+		background-color: #eeeeee;
+	}
+	
+	main p{
+		text-align: center;
+		font-family: Verdana, Arial, sans-serif;
+		font-size: 0.8em;
+		
+	}
+		
+		
+	.hamburger {
+		display: block;
+		font-size: 2em;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 10px;
+	}
+	
+	#hamburger.active{
+		transform: rotate(90deg);
+		transition: transform 0.3s ease;
+	}
+	
+	
+	#nav-links {
+		display: none;
+		text-align: center;
+	}
+	
+	#nav-links.active {
+		display: block;
+	}
+		
+		
+	
+	nav p a{
+		display: inline-block;
+		color: #000000;
+		padding: 0.3em 0.7em;
+		text-decoration: none;
+	}
+	
+	.center{ 
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 90%;
+		max-width: 90%;
+	}
+	
+	.center:hover{ 
+		transform: scale(1.5, 1.5);
+	}
+	
+	
+	
+	footer{
+		text-align: center;
+		font-size: 0.85em;
+		background-color: #eeeeee;
+		color: #000000;
+		padding: 1% 0;
+	
+	}
+	
+	footer img {
+    width: 40px; 
+    transition: transform 0.3s ease;
+	}
+	
+	footer img:hover {
+		transform: scale(1.1)
+	}
+
+	.mobile{
+		display: block;
+		
+	}
+	.tablet-desktop {
+		display: none;
+	}
+	
+	
+	@media screen and (min-width: 630px){
+	
+	.tablet-desktop{
+		display: block;
+	}
+		
+	.mobile{
+		display: none;
+		
+	}
+		
+	.center{ 
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 90%;
+		max-width: 90%;
+	}
+	
+	.center:hover{ 
+		transform: none;
+	}
+	
+	.hamburger {
+		display: none;
+	}
+	
+	#nav-links {
+		display: block;
+	}
+	
+	#nav-links.active {
+		display: block;
+	}
+	
+	
+		
+	}
+	
+	@media screen and (min-width: 1280px){
+		
+	.center{ 
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 45%;
+		max-width: 45%;
+	}
+	
+		
+		
+	}
+	
+	</style>
+	
+	
+</head>
+
+<body>
+	
+		<nav>
+		
+			<button class="hamburger" id="hamburger">
+				&#9776;
+			</button>
+		
+		
+		
+			<p id="nav-links">
+			<a href="index.html">Home</a> 
+			<a href="items.html">Items</a> 
+			<a href="hiddenItems.html">Hidden Items</a> 
+			<a href="tmItems.html">Tm Items</a> 
+			</p>
+			
+		</nav>
+		
+		<main> 
+		
+		<div class="mobile">
+		
+			<a href="routes.html"><img src="images/Kanto_Map_Overview.png" alt="Full Kanto Map" class="center"></a>
+			<!--  Food for thought: I could break up each route on the overall map into thier own separate routes
+				  which I may need to end up doing down the road but for now I think we should have it to where it has 
+				  a hyperlink. The ladder might take too long plus that would be a lot of webpages to create there is probaly an
+				  easier way of doing that so for now I will just have it send me to a routes page but this will 100% change
+				  as I learn more. -->
+			
+		</div>
+		
+			
+		
+			<div class="tablet-desktop">
+			
+				<p>If you are seeing this then that means that I have applies breakpoints for tablet and desktop successfully!</p>
+				
+				<a href="routes.html"><img src="images/Kanto_Map_Overview.png" alt="Full Kanto Map" class="center"></a>
+				<!-- Same image as above we want to change the size depending on what screen we are on! -->
+			
+			</div>
+			
+			
+			
+		</main>
+		
+		
+		<footer>
+		
+			<p>&copy; Copyright 2026. All Rights Reserved.</p>
+			<div class="social-links">
+				<a href="https://www.linkedin.com/in/seth-moore-288a19390/">
+					<img src="images/InBug-Black.png" alt="LinkedIn Profile">
+				</a>
+			</div>
+			
+		</footer>
+		
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>
+
+
+<!-- PROGRESS BELOW -->
+
+
+<!-- Today I worked on implamenting 
+	everything I learned in chapter 1
+	into pratice. 3/1
+	
+	Next time I work on this it will be
+	everything from chapter 2. 3/1
+-->
+	
+<!-- Worked on adding the Semantic Elements 
+	 from chapter 2 that I learned. Along
+	 with creating a webpage template
+	 that I could use in the future.
+	 Along with all that added nonbreaking 
+	 spaces and the semantic elements 
+	 include main, header, nav, and footer.
+	 Also I learned how to vaildate 
+	 my document :0. 3/2-->
+	 
+<!-- Figure out how to add images to the website
+	gotta make sure my folder path is in order. 3/10
+	-->
+	
+<!-- Created a div to have everything that goes with the map.
+     I made the map itself go to a routes page once again probaly a 
+	 place holder for now. The tm item also goes to it's own page
+	 and all of the nav buttons will eventually toggle something on the 
+	 map. Also the routes and tmItem htlm file have been made and for now
+	 only act as list. This will change but once step at a time 03/10 -->
+	 
+	 
+<!-- Today was all about doing CSS stuff still need to look into is 
+	more but I wanted to at least dip my toes in this. 3/12 -->
+	
+	
+<!-- Added the mobile viewpoint to the home page this will help when someone is trying to
+	 view the website via thier phone! 3/26 -->
+	 
+<!-- Added the mobile viewport seciton to just show off what was the most important aspects 
+	 of the website so we don't see our text anymore since it's hidden with our tablet-desktop 
+	 styling. Not to much to expand on here I kept the nav style the same on mobile since it 
+	 will eventually be in a hamburger menu. Also not sure if I can have comments in my 
+	 internal style sheet got errors for it. 3/27 -->
+	 
+<!-- Can do up too 4 different values for each corner. 3/27 -->
+
+<!-- More on making the website responsive on different devices for our main 
+	 page we are mostly focus on just resizing the image for each device. Also I 
+	 added a scale in for the vertical phone screen which I think I can code futher
+	 with JavaScript later. 4/1 ALSO APRIL FOOOOOLLLSSS -->
+

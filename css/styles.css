@@ -1,0 +1,204 @@
+	
+/* Seth Moore 
+   styles.css 
+   3/12/2026 /*	
+	
+	/* CSS Reset */
+	body, header, nav, main, footer, img, h1, h2, dd{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		
+	}
+	
+	/* Body style */
+	body{
+		background-color: #eeeeee;
+	}
+	
+	/* Header style */
+	header{
+		text-align: center;
+		font-size: 3em;
+		font-family: Georgia, Times, serif;
+		padding: 3%;
+		color: #000000
+	}
+	
+	/* Img style */
+	img {
+		max-width: 50%;
+		display: inline-block;
+	}
+	
+	/* Custom classes for styling */
+	.round {
+		border-radius: 8px;
+	}
+	
+	/* Style rules for mobile viewport */
+	.mobile{
+		display: block;
+	}
+	
+	.tablet-desktop { /* I have for now just in case I want to hide unnecessary things from the mobile user will use when appropriate */
+		display: none; 
+	}
+	
+	
+	
+	/* Nav style */
+	nav p a{
+		display: inline-block;
+		color: #000000;
+		padding: 0.3em 0.7em;
+		text-decoration: none;
+	}
+	
+	nav {
+		background-color: #eeeeee;
+	}
+	
+	
+	/* header styling */
+	
+	h1{
+		text-align: center;
+	}
+	
+	/* Unorder list style */
+	
+	li:first-child{   /* pseudo-classes (just wanted to try it out) */
+		font-size: 1.50em;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	li{
+		text-align: center;
+	}
+	
+	/* Table Styling */
+	table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: "Roboto", sans-serif;
+}
+
+	th {
+		background-color: #3B4CCA; /* Pokemon Blue */
+		color: #FFDE00;           /* Pokemon Yellow */
+		padding: 10px;
+		text-transform: uppercase;
+		font-size: 0.9em;
+	}
+
+	td {
+		padding: 10px;
+		border: 1px solid #ccc;
+		font-size: 0.85em;
+		background-color: #fff;
+	}
+
+	
+	tbody tr:nth-child(even) td {
+		background-color: #f1f1f1;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	/* Detailed list style */
+	dt{
+		font-weight: bold;
+		font-family: "Roboto", sans-serif;
+	}
+	
+	dd {
+		text-align: center;
+	}
+	
+
+	
+	/* Main style */
+	main{
+		text-align: center;
+		padding: 2%;
+		font-family: Geneva, Arial, sans-serif;
+		overflow: auto;
+	}
+	
+	main ul{
+		list-style-type: none;
+		margin: 0;
+		text-align: center;
+	}
+	
+	
+	/* Footer style */
+	footer{
+		text-align: center;
+		font-size: 0.85em;
+		background-color: #eeeeee;
+		color: #000000;
+		padding: 1% 0;
+	
+	}
+	
+	
+	/* Tablet/Desktop Viewport */
+	
+	/* If I need to then I will add a viewport for desktop but for now I think this will be fine */
+	
+	@media screen and (min-width:630px){
+		
+		
+		.mobile{
+			display: none;
+		}
+	
+		.tablet-desktop { /* I have for now just in case I want to hide unnecessary things from the mobile user will use when appropriate */
+			display: block; 
+		}
+		
+		
+		
+		table {
+			width: 90%;
+			margin: 20px auto;
+		}
+
+		th, td {
+			padding: 15px;
+			font-size: 1em;
+		}
+
+    /* Added a hover effect because I am cool */
+		tbody tr:hover td {
+			background-color: #fff9c4;
+		}
+		
+		
+		
+		
+		
+		#row-1 {
+			width: 40%;
+			float: left;
+			margin: 0 1%;
+		}
+		
+		#row-2 {
+			width: 40%;
+			float: right;
+			margin: 0 1%;
+		}
+		
+		
+	}
+	
